@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta - Broaster y Sazón</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagenes/logo2.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER ROJO -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-Broaster shadow-sm">
+          <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="imagenes/logo2.jpg" alt="Broaster y Sazón" width="45" height="45" class="rounded-circle border-warning border-2">
+                <strong class="text-warning">Broaster y Sazón</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="carta.html">Carta</a></li>
+                <li class="nav-item"><a class="nav-link active" href="promociones.html">Promociones</a></li>
+                <li class="nav-item"><a class="nav-link active" href="servicios.html">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link active" href="testimonios.html">Testimonios</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <!-- TITULO CARTA -->
+    <section class="bg-amarillo py-4 text-center">
+        <div class="container">
+            <h1 class="text-Broaster fw-bold">Nuestra Carta</h1>
+            <p class="lead">Elige tu antojo favorito</p>
+        </div>
+    </section>
+
+    <!-- MENU DE CATEGORIAS -->
+    <section class="container py-4">
+      <ul class="nav nav-pills justify-content-center text-center category-nav gap-3" id="menuCategorias">
+        <li class="nav-item"><div class="icon">🍗</div><span>Pollo Broaster</span></a></li>
+        <li class="nav-item"><div class="icon">🍔</div><span>Hamburguesas</span></a></li>
+        <li class="nav-item"><div class="icon">🍨</div><span>Postres</span></a></li>
+        <li class="nav-item"><div class="icon">🥤</div><span>Bebidas</span></a></li>
+      </ul>
+    </section>
+
+    <!-- SECCION PRODUCTOS -->
+    <div class="container pb-5">
+
+        <!-- POLLO Broaster -->
+        <section id="pollo" class="mb-5">
+            <h2 class="text-Broaster mb-4 border-bottom pb-2">🍗 Pollo Broaster</h2>
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/polloalabrasa.papas}.png" class="img-producto" alt="Pollo a la Brasa">
+                        <h4 class="nombre-producto">Pollo a la Brasa 1/4</h4>
+                        <h6 class="nombre-producto">Pollo dorado y jugoso, marinado con nuestra sazon de casa, clasico.</h6>
+                        <p class="precio">S/ 24.90</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Pollo a la Brasa 1/4 - S/18.90" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/twisterBroester.jpeg" class="img-producto" alt="Twister Broaster">
+                        <h4 class="nombre-producto">Twister Broaster</h4>
+                        <h6 class="nombre-producto">Tiras de polo Broaster crocante, lechuga fresca, y salsa envuelta con tortilla, perfecto para compartir.</h6>
+                        <p class="precio">S/ 13.90</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Twister Broaster - S/22.90" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                 <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/Broester.clasico.jpg" class="img-producto" alt="Pollo Broaster clasico">
+                        <h4 class="nombre-producto">Pollo Broaster clasico</h4>
+                        <h6 class="nombre-producto">Pollo Broaster crocante y jugoso, marinado con nuestra sazon de casa, acompañado de diversas salsas y ensalada frescas, clasico.</h6>
+                        <p class="precio">S/ 11.90</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Pollo Broaster clasico - S/18.90" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/pollo.bufalo.jpg" class="img-producto" alt="Pollo Bufalo">
+                        <h4 class="nombre-producto">Pollo Bufalo</h4>
+                        <h6 class="nombre-producto">Pollo bufalo crocante y jugoso, marinado con nuestra sazon de casa, acompañado con uan salsa picante, con un toque de mantequila y ensalada frescas.</h6>
+                        <p class="precio">S/ 14.00</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Pollo Bufalo - S/14.00" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/pollo.honey.jpeg" class="img-producto" alt="Pollo Honey">
+                        <h4 class="nombre-producto">Pollo Honey</h4>
+                        <h6 class="nombre-producto">Pollo Broaster crocante y jugoso, marinado con nuestra sazon de casa, acompañado con una salsa de miel y mostaza, ensalada frescas.</h6>
+                        <p class="precio">S/ 20.90</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Pollo Honey - S/20.90" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/pollo.maracuya.png" class="img-producto" alt="Pollo al Maracuyá">
+                        <h4 class="nombre-producto">Pollo al Maracuyá</h4>
+                        <h6 class="nombre-producto">Pollo Broaster crocante y jugoso, marinado con nuestra sazon de casa, acompañado con una salsa de maracuya, ensalada frescas.</h6>
+                        <p class="precio">S/ 15.90</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Pollo al Maracuyá - S/15.90" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/pollo.BBQ.jpg" class="img-producto" alt="Pollo BBQ">
+                        <h4 class="nombre-producto">Pollo BBQ</h4>
+                        <h6 class="nombre-producto">Pollo Broaster crocante y jugoso, marinado con nuestra sazon de casa, acompañado con una salsa de BBQ, ensalada frescas.</h6>
+                        <p class="precio">S/ 19.90</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Pollo BBQ - S/24.90" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/pollo.teriyaki.jpeg" class="img-producto" alt="Pollo teriyaki">
+                        <h4 class="nombre-producto">Pollo teriyaki</h4>
+                        <h6 class="nombre-producto">Pollo Broaster crocante y jugoso, marinado con nuestra sazon de casa, acompañado con una salsa de teriyaki, ensalada frescas.</h6>
+                        <p class="precio">S/ 22.90</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Pollo teriyaki - S/22.90" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/pollo.acevichada.jpg" class="img-producto" alt="Pollo acevichado">
+                        <h4 class="nombre-producto">Pollo acevichado</h4>
+                        <h6 class="nombre-producto">Pollo Broaster crocante y jugoso, marinado con nuestra sazon de casa, acompañado con una salsa de acevichada, ensalada frescas.</h6>
+                        <p class="precio">S/ 20.90</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Pollo acevichado - S/20.90" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+        <!-- HAMBURGUESAS -->
+        <section id="hamburguesas" class="mb-5">
+            <h2 class="text-Broaster mb-4 border-bottom pb-2">🍔 Hamburguesas</h2>
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/hamburguesa.clasico.jpg" class="img-producto" alt="Clásica Broaster">
+                        <h4 class="nombre-producto">Hamburguesa Clásica</h4>
+                        <h6 class="nombre-producto">Jugosa hamburguesa de res, con lechuga fresca, tomate y nuestro original queso dfundido, acompañada de papas fritas.</h6>
+                        <p class="precio">S/ 9.90</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Clásica Broaster - S/9.90" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/hamburguesa.americana.jpg" class="img-producto" alt="Mega Broaster">
+                        <h4 class="nombre-producto">Hamburguesa Americana</h4>
+                        <h6 class="nombre-producto">Hamburguesa americana + Papas. Carne, queso, tocino y sus papas doradas.</h6>
+                        <p class="precio">S/ 19.90</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Mega Broaster - S/19.90" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/hamburguesa.queso.jpg" class="img-producto" alt="Hamburguesa con Queso">
+                        <h4 class="nombre-producto">Hamburguesa Cheese</h4>
+                        <h6 class="nombre-producto">Hamburguesa Cheese + Papas. Carne, queso y sus papas doradas.</h6>
+                        <p class="precio">S/ 14.90</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Hamburguesa Cheese - S/14.90" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/hamburguesa.royal.jpg" class="img-producto" alt="Hamburguesa Royal">
+                        <h4 class="nombre-producto">Hamburguesa Royal</h4>
+                        <h6 class="nombre-producto">Hamburguesa Royal + Papas. Carne, queso cheddar, jamon, huevo frito y sus papas doradas.</h6>
+                        <p class="precio">S/ 18.90</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Hamburguesa Royal - S/18.90" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/hamburguesa.deluxe.jpg" class="img-producto" alt="Hamburguesa Deluxe">
+                        <h4 class="nombre-producto">Hamburguesa Deluxe</h4>
+                        <h6 class="nombre-producto">Hamburguesa Deluxe + Papas. Carne, queso cheddar, cebolla en rodajas, palta en corte finos, tocino y sus papas doradas.</h6>
+                        <p class="precio">S/ 22.90</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Hamburguesa Deluxe - S/22.90" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/hamburguesa.triple.jpg" class="img-producto" alt="Hamburguesa Triple">
+                        <h4 class="nombre-producto">Hamburguesa Triple</h4>
+                        <h6 class="nombre-producto">Hamburguesa Triple + Papas. Tres carnes, tres quesos cheddar, cebolla en rodajas, palta en corte finos y sus papas doradas.</h6>
+                        <p class="precio">S/ 26.90</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Hamburguesa Triple - S/26.90" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- POSTRES -->
+        <section id="postres" class="mb-5">
+            <h2 class="text-Broaster mb-4 border-bottom pb-2">🍨 Postres</h2>
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/helado.Broester.jpg" class="img-producto" alt="Helado Broaster">
+                        <h4 class="nombre-producto">Helado Broaster</h4>
+                        <h6 class="nombre-producto">Delicioso clasico helado de vainilla con trozos de popcorn de Broaster, acompañado de su fost de caramelo, perfecto.</h6>
+                        <p class="precio">S/ 9.90</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Helado Broaster - S/9.90" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                 <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/helado.de.cono.jpg" class="img-producto" alt="Helado De Cono">
+                        <h4 class="nombre-producto">Helado De Cono</h4>
+                        <h6 class="nombre-producto">Clasico helado de cono, choclate, vainilla y marmoleado. Perfecto para refrescarte.</h6>
+                        <p class="precio">S/ 4.90</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Helado De Cono - S/4.90" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/helado.keke.chocolste.jpg" class="img-producto" alt="Helado Keke Chocolste">
+                        <h4 class="nombre-producto">Helado Keke Chocolste</h4>
+                        <h6 class="nombre-producto">Delicioso helado de chocolate con trozos de keke, acompañado de su fost de chocolate, perfecto para refrescarte.</h6>
+                        <p class="precio">S/ 9.90</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Helado Broaster - S/9.90" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/helado.chimchim.jpg" class="img-producto" alt="Helado Chimchim">
+                        <h4 class="nombre-producto">Helado Chimchim</h4>
+                        <h6 class="nombre-producto">Delicioso clasico helado de vainilla con chimchim, acompañado de su fost de caramelo, perfecto para refrescarte.</h6>
+                        <p class="precio">S/ 9.90</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Helado Broaster - S/9.90" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/helado.keke.jpg" class="img-producto" alt="Helado Keke">
+                        <h4 class="nombre-producto">Helado Keke</h4>
+                        <h6 class="nombre-producto">Delicioso helado de chocolate con trozos de keke, acompañado de su fost de caramelo, perfecto para refrescarte.</h6>
+                        <p class="precio">S/ 9.90</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Helado Broaster - S/9.90" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/shake.oreo.jpeg" class="img-producto" alt="Shake Oreo">
+                        <h4 class="nombre-producto">Shake Oreo</h4>
+                        <h6 class="nombre-producto">Delicioso shake de chocolate con trozos de Oreo, perfecto para satisfacer tu antojo dulce.</h6>
+                        <p class="precio">S/ 8.90</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Shake Oreo - S/8.90" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+               <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/shake.fresa.jpeg" class="img-producto" alt="Shake Fresa">
+                        <h4 class="nombre-producto">Shake Fresa</h4>
+                        <h6 class="nombre-producto">Delicioso shake de fresa con trozos de fresas frescas, un verano perfecto.</h6>
+                        <p class="precio">S/ 8.90</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Shake Fresa - S/8.90" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/shake.chocolate.jpeg" class="img-producto" alt="Shake Chocolate">
+                        <h4 class="nombre-producto">Shake Chocolate</h4>
+                        <h6 class="nombre-producto">Delicioso shake de chocolate con trozos de chocolate puro andino, acompañado de una crema de chantilly, perfecto para los amantes del sabor intenso.</h6>
+                        <p class="precio">S/ 12.90</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Shake Chocolate - S/12.90" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BEBIDAS -->
+        <section id="bebidas" class="mb-5">
+            <h2 class="text-Broaster mb-4 border-bottom pb-2">🥤 Adicionales</h2>
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/coca-cola.jpg" class="img-producto" alt="Coca Cola">
+                        <h4 class="nombre-producto">Coca Cola vaso</h4>
+                        <p class="precio">S/ 2.00</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Coca Cola vaso - S/2.00" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/coca.cola.jpg" class="img-producto" alt="Coca Cola">
+                        <h4 class="nombre-producto">Coca Cola 1 litro</h4>
+                        <p class="precio">S/ 5.00</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Coca Cola 1 litro - S/5.00" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/inca.kola.jpg" class="img-producto" alt="Inca Kola">
+                        <h4 class="nombre-producto">Inca Kola 1 litro</h4>
+                        <p class="precio">S/ 5.00</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Inca Kola 1 litro - S/5.00" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/papas.fritas.jpg" class="img-producto" alt="Papas Fritas">
+                        <h4 class="nombre-producto">Papas Fritas</h4>
+                        <h6 class="nombre-producto">Crujientes papas fritas doradas, con un peso de 250gr.</h6>
+                        <p class="precio">S/ 5.00</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Papas Fritas - S/5.00" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/acevichada.jpg" class="img-producto" alt="Salchipapa">
+                        <h4 class="nombre-producto">Salsa Ketchup</h4>
+                        <p class="precio">S/ 4.00</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Salsa Ketchup - S/12.00" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/aji.jpg" class="img-producto" alt="Salsa Aji">
+                        <h4 class="nombre-producto">Salsa Aji</h4>
+                        <p class="precio">S/ 4.00</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Salsa Aji - S/4.00" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/BBQ.jpg" class="img-producto" alt="Salsa BBQ">
+                        <h4 class="nombre-producto">Salsa BBQ</h4>
+                        <p class="precio">S/ 4.00</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Salsa BBQ - S/4.00" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/cheddar.jpg" class="img-producto" alt="Salsa Cheddar">
+                        <h4 class="nombre-producto">Salsa Cheddar</h4>
+                        <p class="precio">S/ 4.00</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Salsa Cheddar - S/4.00" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                 <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/golf.jpg" class="img-producto" alt="Salsa Golf">
+                        <h4 class="nombre-producto">Salsa Golf</h4>
+                        <p class="precio">S/ 4.00</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Salsa Golf - S/4.00" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/mayonesa.jpg" class="img-producto" alt="Salsa Mayonesa">
+                        <h4 class="nombre-producto">Salsa Mayonesa</h4>
+                        <p class="precio">S/ 4.00</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Salsa Mayonesa - S/4.00" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/ketchup.jpg" class="img-producto" alt="Salsa Ketchup">
+                        <h4 class="nombre-producto">Salsa Ketchup</h4>
+                        <p class="precio">S/ 4.00</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Salsa Mayonesa - S/4.00" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/ensalada.lechuga.jpg" class="img-producto" alt="Ensalada con Lechuga fresca">
+                        <h4 class="nombre-producto">Ensalada con Lechuga fresca + vinagreta</h4>
+                        <p class="precio">S/ 6.00</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Ensalada con Lechuga fresca + vinagreta - S/6.00" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/ensalda.verdura.jpg" class="img-producto" alt="Ensalada con Verduras">
+                        <h4 class="nombre-producto">Ensalada con Verduras + vinagreta</h4>
+                        <p class="precio">S/ 5.00</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Ensalada con Verduras + vinagreta - S/5.00" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/ensalada.pollo.jpg" class="img-producto" alt="Ensalada con Pollo">
+                        <h4 class="nombre-producto">Ensalada con Pollo</h4>
+                        <p class="precio">S/ 7.00</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Ensalada con Pollo - S/7.00" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-mc">
+                        <img src="imagenes/ensalada.beterraga.jpg" class="img-producto" alt="Ensalada con Beterraga">
+                        <h4 class="nombre-producto">Ensalada con Beterraga</h4>
+                        <p class="precio">S/ 6.00</p>
+                        <a href="https://wa.me/51999999?text=Hola Broaster y Sazón, quiero pedir: Ensalada con Beterraga - S/6.00" target="_blank" class="btn-pedir">Pedir</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+     <!-- FOOTER NEGRO - IGUAL QUE LAS DEMAS -->
+    <footer class="footer-simple">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <div class="col-md-4 mb-4">
+            <img src="imagenes/logo2.jpg" alt="Logo" class="logo-footer">
+            <h3>Broaster y Sazón</h3>
+            <p>El mejor sabor crujiente de la ciudad</p>
+          </div>
+            <h3>Síguenos</h3>
+            <div class="redes-circulo">
+                <a href="https://tiktok.com/" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tiktok.svg">
+                </a>
+                <a href="https://instagram.com/" target="_blank">
+                         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg">
+                </a>
+                <a href="https://wa.me/51999999" target="_blank">
+                         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg">
+                </a>
+
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p class="text-center">© 2025 Broaster y Sazón. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+</body>
+</html>
