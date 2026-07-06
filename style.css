@@ -1,0 +1,1409 @@
+body { 
+  font-family: 'Poppins', sans-serif; 
+  background: #FF6A00; /* FONDO NARANJA */
+  color: #FFD700; /* LETRAS AMARILLAS */
+}
+
+/* TÍTULOS CON GOOGLE FONT */
+.rr-titulo { 
+  font-family: 'Lobster', cursive; 
+  color: #f72020; /* AMARILLO */
+}
+
+/* HEADER NEGRO PARA CONTRASTE */
+.rr-header { 
+  background: #000; 
+}
+.rr-header .nav-link { 
+  color: #fffbf8 !important; /* AMARILLO */
+  font-weight: 600;
+}
+.rr-header .nav-link.active { 
+  color: #ff9b54 !important; /* NARANJA */
+}
+.rr-header .nav-link:hover {
+  color: #FF6A00 !important;
+}
+
+/* BANNER */
+.rr-banner { 
+  background: linear-gradient(rgba(255,106,0,0.85), rgba(255,106,0,0.85)), url('imagenes/banner.jpg') center/cover; 
+  color: #fff9f7; /* LETRAS AMARILLAS */
+  padding: 100px 0; 
+  text-align: center; 
+  border-bottom: 4px solid #000;
+}
+.rr-linea { 
+  width: 80px; 
+  height: 4px; 
+  background: #FFD700; /* LINEA AMARILLA */
+  margin: 15px auto; 
+}
+
+/* BOTÓN NARANJA OSCURO */
+.rr-btn { 
+  background: #FF6A00; /* NARANJA */
+  color: #FFD700; /* LETRA AMARILLA */
+  border: 2px solid #FFD700;
+  padding: 12px 25px; 
+  border-radius: 8px; 
+  font-weight: bold; 
+  transition: 0.3s;
+}
+.rr-btn:hover { 
+  background: #FFD700; /* AMARILLO */
+  color: #000; /* LETRA NEGRA */
+  border-color: #FF6A00;
+}
+
+/* CARDS CON FONDO NEGRO */
+.rr-card { 
+  border: 2px solid #FFD700; 
+  border-radius: 15px; 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
+  background: #000; /* FONDO NEGRO */
+  color: #FFD700; /* LETRA AMARILLA */
+  padding: 20px;
+}
+.rr-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255,106,0,0.5);
+}
+
+/* ACCORDION NARANJA Y NEGRO */
+.rr-accordion .accordion-item {
+  border: 2px solid #FFD700;
+  background: #000;
+  border-radius: 10px !important;
+  margin-bottom: 10px;
+}
+.rr-accordion .accordion-button { 
+  background: #FF6A00; /* NARANJA */
+  color: #FFD700; /* LETRA AMARILLA */
+  font-weight: bold; 
+}
+.rr-accordion .accordion-button:not(.collapsed) {
+  background: #FFD700; /* AMARILLO */
+  color: #000; /* LETRA NEGRA */
+}
+.rr-accordion .accordion-body {
+  background: #000;
+  color: #FFD700;
+}
+
+/* FOOTER NEGRO */
+.rr-footer { 
+  background: #000; 
+  color: #FFD700; /* LETRAS AMARILLAS */
+  padding: 40px 0; 
+  border-top: 4px solid #FF6A00;
+}
+.rr-footer h3 {
+  color: #FF6A00; /* TITULOS NARANJA */
+}
+
+/* =========================================
+   1. VARIABLES Y BASE
+========================================= */
+:root {
+  --rojo: #D62828;
+  --amarillo: #FFC300;
+  --negro: #000;
+  --crema: #FFF8F0;
+}
+
+body {
+  background: var(--crema);
+  font-family: 'Poppins', sans-serif;
+  color: var(--negro);
+}
+
+/* =========================================
+   2. HEADER ROJO ESTILO MC
+========================================= */
+.navbar-Broaster {
+  background: var(--rojo);
+  padding: 15px 0 8px;
+  position: relative;
+}
+
+.logo-Broaster { 
+  width: 70px; 
+  height: 70px; 
+  background: white; 
+  border-radius: 50%; 
+  padding: 8px; 
+  object-fit: contain;
+  border: 3px solid var(--amarillo);
+}
+
+.titulo-marca { 
+  color: var(--amarillo) !important; 
+  font-size: 2rem; 
+  font-weight: 900;
+}
+
+.linea-amarilla {
+  height: 4px;
+  background: var(--amarillo);
+  width: 80%;
+  margin: 8px auto 0;
+}
+
+/* Menu links */
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0 10px;
+  transition: 0.2s;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--amarillo) !important;
+  border-bottom: 3px solid var(--amarillo);
+}
+
+/* Boton hamburguesa */
+.navbar-toggler { 
+  border: 2px solid white; 
+}
+.navbar-toggler-icon { 
+  filter: invert(1); 
+}
+
+/* =========================================
+   3. CARRUSEL FONDO NEGRO
+========================================= */
+#carouselProductos {
+  background: var(--negro);
+}
+#carouselProductos .carousel-item img {
+  height: 450px;
+  object-fit: contain;
+  background: var(--negro);
+}
+#carouselProductos .carousel-control-prev-icon,
+#carouselProductos .carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* =========================================
+   4. SECCIÓN SERVICIOS INDEX - 3 CAJAS COLOR
+========================================= */
+/* ===== SECCIÓN SERVICIOS INDEX CON CONTRASTE ===== */
+.servicios-index {
+  padding: 70px 20px;
+  background: var(--rojo); /* FONDO ROJO PARA CONTRASTE */
+}
+
+.servicios-index h2 {
+  color: var(--amarillo);
+  font-weight: 900;
+  text-align: center;
+  font-size: 2.8rem;
+  text-shadow: 3px 3px 0px var(--rojo);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.servicios-index .subtitulo {
+  text-align: center;
+  color: rgb(252, 233, 233);
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
+
+.item-servicio {
+  background: #000000; /* gris negro */
+  padding: 25px 30px;
+  border-radius: 15px;
+  border-left: 6px solid var(--rojo);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: 0.3s;
+}
+.item-servicio:hover {
+  background: var(--rojo);
+  transform: translateX(10px);
+}
+
+.item-servicio .icono {
+  font-size: 45px;
+  flex-shrink: 0;
+}
+
+.item-servicio h4 {
+  color: var(--amarillo);
+  font-weight: 900;
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.item-servicio p {
+  color: white;
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* =========================================
+   5. SECCIÓN CARTA / PRODUCTOS
+========================================= */
+.categorias {
+  padding: 40px 0;
+  background: var(--crema);
+}
+
+.btn-categoria {
+  display: block;
+  background: var(--rojo);
+  color: rgb(253, 241, 241);
+  text-align: center;
+  padding: 25px 10px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.1rem;
+  border: 3px solid var(--amarillo);
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.btn-categoria.active {
+  background: var(--amarillo);
+  color: var(--rojo);
+}
+.btn-categoria:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(214, 40, 40, 0.3);
+}
+
+.titulo-categoria {
+  color: var(--rojo);
+  font-weight: 900;
+  font-size: 2.2rem;
+  margin: 20px 0 40px;
+  text-align: center;
+}
+
+.section-productos {
+  padding: 50px 0;
+}
+
+/* Cards de productos */
+.card-simple {
+  background: white;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  border: 2px solid #eee;
+  transition: 0.3s;
+}
+.card-simple:hover {
+  border-color: var(--rojo);
+}
+
+.card-simple img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card-simple h5 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.card-simple p {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: var(--rojo);
+  margin-bottom: 10px;
+}
+
+.btn-pedir {
+  display: block;
+  background: var(--rojo);
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.btn-pedir:hover {
+  background: #B91F1F;
+  color: white;
+}
+
+/* =========================================
+   1. HEADER ROJO SE QUEDA IGUAL
+========================================= */
+.navbar-dark.bg-Broaster {
+  background: var(--rojo) !important;
+}
+.navbar-brand strong {
+  color: var(--amarillo) !important;
+}
+.navbar-nav .nav-link {
+  color: rgb(250, 246, 244) !important;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--amarillo) !important;
+}
+
+/* =========================================
+   2. TITULO CARTA - MAS SIMPLE
+========================================= */
+.bg-amarillo {
+  background: var(--crema) !important;
+  border-bottom: 4px solid var(--rojo);
+}
+.bg-amarillo h1.text-Broaster {
+  color: var(--rojo) !important;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+.bg-amarillo p.lead {
+  color: #555;
+}
+
+/* =========================================
+   3. BOTONES CATEGORIA - HUMILDES
+========================================= */
+.category-nav .nav-item {
+  background: white;
+  color: var(--rojo);
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 2px solid var(--rojo);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  min-width: 130px;
+}
+.category-nav .nav-item:hover {
+  background: var(--rojo);
+  color: white;
+  transform: none;
+}
+
+/* =========================================
+   4. SECCION PRODUCTOS - DISEÑO HUMILDE
+========================================= */
+#pollo, #hamburguesas, #postres {
+  background: white;
+  padding: 0;
+  border-radius: 0;
+  margin-bottom: 50px !important;
+}
+
+.text-Broaster {
+  color: var(--rojo) !important;
+  font-weight: 900;
+  border-bottom: 2px solid #f0bb29 !important;
+  padding-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+/* CARDS SIMPLES SIN TANTO COLOR */
+.card-mc {
+  background: #ffd1ac;
+  border: 1px solid #c22121;
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+  height: 100%;
+  transition: 0.2s;
+  box-shadow: none;
+}
+.card-mc:hover {
+  border-color: var(--rojo);
+  transform: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.img-producto {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.nombre-producto {
+  color: #333;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+h6.nombre-producto {
+  color: #666;
+  font-weight: 400;
+  font-size: 0.8rem;
+  min-height: 40px;
+}
+
+.precio {
+  color: var(--rojo);
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin: 8px 0;
+}
+
+/* BOTON PEDIR SIMPLE */
+.btn-pedir {
+  display: block;
+  background: var(--rojo);
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  transition: 0.3s;
+  border: none;
+}
+.btn-pedir:hover {
+  background: #B91F1F;
+  color: white;
+}
+
+/* =========================================
+   5. FOOTER QUE SE NOTE - FONDO NEGRO
+========================================= */
+footer, .footer-simple {
+   background: var(--negro) !important;
+  color: white;
+  padding: 50px 20px 20px;
+  margin-top: 60px;
+  border-top: 5px solid var(--amarillo);
+}
+
+footer h3, .footer-simple h3 {
+  color: var(--amarillo);
+  font-weight: 900;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+footer p, .footer-simple p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.redes-circulo a {
+  background: #333;
+}
+.redes-circulo a:hover {
+  background: var(--rojo);
+}
+
+footer hr {
+  border-color: #444;
+  margin: 30px 0 15px;
+}
+
+footer .text-center {
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* =========================================
+   SECCIÓN SERVICIOS CON DISEÑO - ICONOS
+========================================= */
+.servicios-pagina {
+  background: var(--crema);
+  padding: 80px 20px;
+}
+
+.item-servicio-pagina {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  border: 2px solid #eee;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Línea de color al costado */
+.item-servicio-pagina::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  background: var(--rojo);
+  transition: 0.4s;
+}
+
+.item-servicio-pagina:hover {
+  border-color: var(--rojo);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(214, 40, 40, 0.15);
+}
+.item-servicio-pagina:hover::before {
+  width: 100%;
+  background: var(--rojo);
+  opacity: 0.08;
+}
+
+/* CIRCULO PARA EL ICONO */
+.item-servicio-pagina .icono {
+  font-size: 40px;
+  width: 80px;
+  height: 80px;
+  background: var(--amarillo);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 3px solid var(--rojo);
+  transition: 0.4s;
+}
+
+.item-servicio-pagina:hover .icono {
+  background: var(--rojo);
+  transform: rotate(10deg) scale(1.1);
+  border-color: var(--amarillo);
+}
+
+.item-servicio-pagina h4 {
+  color: var(--rojo);
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.item-servicio-pagina p {
+  color: #555;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .item-servicio-pagina {
+    flex-direction: column;
+    text-align: center;
+  }
+  .item-servicio-pagina::before {
+    width: 100%;
+    height: 5px;
+  }
+}
+
+/* =========================================
+   PROMOCIONES - VIBRAS BROASTER Y SAZÓN
+========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+:root {
+  --rojo: #D62828;
+  --rojo-oscuro: #B71C1C;
+  --crema: #FFF8F0;
+  --naranja: #F77F00;
+  --amarillo: #FCBF49;
+}
+
+body {
+  background: var(--crema);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER ROJO */
+.header-bs {
+  background: var(--rojo);
+  box-shadow: 0 4px 10px rgba(214, 40, 40, 0.3);
+}
+.header-bs .navbar-brand {
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--amarillo) !important;
+}
+.header-bs .nav-link {
+  color: white !important;
+  font-weight: 700;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+.header-bs .nav-link:hover, .header-bs .nav-link.active {
+  color: var(--amarillo) !important;
+  border-bottom: 2px solid var(--amarillo);
+}
+.navbar-toggler {
+  border: 2px solid white;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* BANNER TÍTULO */
+.banner-promociones {
+  background: var(--crema);
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+.banner-promociones h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--rojo);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.banner-promociones .linea {
+  width: 80%;
+  max-width: 600px;
+  height: 3px;
+  background: var(--naranja);
+  margin: 15px auto;
+  border-radius: 10px;
+}
+.banner-promociones p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* CARDS DE PROMOCIONES */
+.card-promo-bs {
+  border: 3px solid var(--rojo);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: 0.4s;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+.card-promo-bs:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(214, 40, 40, 0.25);
+}
+.card-promo-bs .card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+.badge-promo {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--rojo);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: 900;
+  font-size: 0.9rem;
+  z-index: 2;
+}
+
+.card-promo-bs .card-title {
+  color: var(--rojo);
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+.card-promo-bs .card-text {
+  color: #555;
+}
+
+/* PRECIOS CON TACHADO */
+.precios {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 15px 0;
+}
+.precio-original {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.precio-promo {
+  color: var(--rojo);
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+/* BOTÓN PEDIR */
+.btn-pedir-bs {
+  background: var(--amarillo);
+  color: var(--rojo-oscuro);
+  font-weight: 900;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
+}
+.btn-pedir-bs:hover {
+  background: var(--rojo);
+  color: white;
+}
+
+/* FOOTER */
+.footer-bs {
+  background: var(--rojo-oscuro);
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 60px;
+}
+/* =========================================
+   AJUSTE TAMAÑO MODERADO PARA LAS PROMOS
+========================================= */
+
+/* 1. Bajar altura de imagen */
+.card-promo-bs .card-img-top {
+  height: 180px; /* antes 250px */
+}
+
+/* 2. Bajar padding interno */
+.card-promo-bs .card-body {
+  padding: 18px; /* antes venía 25px de bootstrap */
+}
+
+/* 3. Bajar tamaño del título */
+.card-promo-bs .card-title {
+  font-size: 1.15rem; /* antes 1.4rem */
+  margin-bottom: 8px;
+}
+
+/* 4. Bajar tamaño de la descripción */
+.card-promo-bs .card-text {
+  font-size: 0.9rem; /* antes 1rem */
+  min-height: 40px; /* para que todas midan igual */
+}
+
+/* 5. Bajar precios */
+.precio-original {
+  font-size: 0.95rem; /* antes 1.1rem */
+}
+.precio-promo {
+  font-size: 1.6rem; /* antes 2rem */
+}
+
+/* 6. Bajar botón */
+.btn-pedir-bs {
+  padding: 10px;
+  font-size: 0.95rem;
+}
+
+/* 7. Bajar badge */
+.badge-promo {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  top: 10px;
+  right: 10px;
+}
+/* =========================================
+   TESTIMONIOS - VIBRAS BROASTER Y SAZÓN
+========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+:root {
+  --rojo: #D62828;
+  --rojo-oscuro: #B71C1C;
+  --crema: #FFF8F0;
+  --naranja: #F77F00;
+  --amarillo: #FCBF49;
+}
+
+body {
+  background: var(--crema);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER ROJO */
+.header-bs {
+  background: var(--rojo);
+  box-shadow: 0 4px 10px rgba(214, 40, 40, 0.3);
+}
+.header-bs .navbar-brand {
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--amarillo) !important;
+}
+.header-bs .nav-link {
+  color: white !important;
+  font-weight: 700;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+.header-bs .nav-link:hover, .header-bs .nav-link.active {
+  color: var(--amarillo) !important;
+  border-bottom: 2px solid var(--amarillo);
+}
+.navbar-toggler { border: 2px solid white; }
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* BANNER TÍTULO */
+.banner-pagina {
+  background: var(--crema);
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+.banner-pagina h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--rojo);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.banner-pagina .linea {
+  width: 80%;
+  max-width: 600px;
+  height: 3px;
+  background: var(--naranja);
+  margin: 15px auto;
+  border-radius: 10px;
+}
+.banner-pagina p { font-size: 1.2rem; color: #666; }
+
+/* INTRODUCCIÓN */
+.intro-testimonios { background: var(--crema); }
+.titulo-intro {
+  color: var(--rojo);
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+.linea-corta {
+  width: 80px;
+  height: 4px;
+  background: var(--naranja);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.texto-intro { font-size: 1.1rem; color: #555; line-height: 1.8; }
+.btn-dejar-opinion {
+  background: var(--amarillo);
+  color: var(--rojo-oscuro);
+  font-weight: 900;
+  padding: 12px 30px;
+  border-radius: 12px;
+  border: none;
+  margin-top: 15px;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-dejar-opinion:hover {
+  background: var(--rojo);
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* CARDS TESTIMONIOS */
+.testimonios-section { background: white; }
+.card-testimonio {
+  border: 3px solid #eee;
+  border-radius: 18px;
+  transition: 0.4s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+.card-testimonio:hover {
+  border-color: var(--rojo);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(214, 40, 40, 0.2);
+}
+.img-cliente {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--amarillo);
+  margin-bottom: 15px;
+}
+.estrellas { color: var(--amarillo); font-size: 1.3rem; margin-bottom: 12px; letter-spacing: 4px; }
+.comentario { font-size: 0.95rem; color: #555; font-style: italic; min-height: 90px; }
+.nombre-cliente { color: var(--rojo); font-weight: 900; font-size: 1.2rem; margin-bottom: 5px; }
+.fecha { color: #999; font-size: 0.85rem; }
+
+/* FOOTER */
+.footer-bs {
+  background: var(--rojo-oscuro);
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 60px;
+}
+/* =========================================
+   CONTACTO - VIBRAS BROASTER Y SAZÓN
+========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+:root {
+  --rojo: #D62828;
+  --rojo-oscuro: #B71C1C;
+  --crema: #FFF8F0;
+  --naranja: #F77F00;
+  --amarillo: #FCBF49;
+}
+
+body {
+  background: var(--crema);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+.header-bs {
+  background: var(--rojo);
+  box-shadow: 0 4px 10px rgba(214, 40, 40, 0.3);
+}
+.header-bs .navbar-brand { font-weight: 900; font-size: 1.5rem; color: var(--amarillo) !important; }
+.header-bs .nav-link { color: white !important; font-weight: 700; margin: 0 5px; transition: 0.3s; }
+.header-bs .nav-link:hover, .header-bs .nav-link.active { color: var(--amarillo) !important; border-bottom: 2px solid var(--amarillo); }
+.navbar-toggler { border: 2px solid white; }
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* BANNER */
+.banner-pagina {
+  background: var(--crema);
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+.banner-pagina h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--rojo);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.banner-pagina .linea {
+  width: 80%;
+  max-width: 600px;
+  height: 3px;
+  background: var(--naranja);
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+/* TÍTULOS SECCIÓN */
+.titulo-seccion {
+  color: var(--rojo);
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+.linea-corta {
+  width: 80px;
+  height: 4px;
+  background: var(--naranja);
+  border-radius: 10px;
+}
+
+/* UBICACIÓN */
+.ubicacion-section { background: white; }
+.info-ubicacion { padding: 20px; }
+.item-info {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.item-info .icono {
+  font-size: 2rem;
+  background: var(--amarillo);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.item-info h5 { color: var(--rojo); font-weight: 900; margin-bottom: 5px; }
+.card-mapa {
+  border: 3px solid var(--amarillo);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* HORARIOS */
+.horarios-section { background: var(--crema); }
+.card-horarios {
+  border: 3px solid var(--rojo);
+  border-radius: 18px;
+  overflow: hidden;
+}
+.table-horarios thead {
+  background: var(--rojo);
+  color: white;
+  font-size: 1.1rem;
+}
+.table-horarios th, .table-horarios td {
+  padding: 18px;
+  text-align: center;
+  font-weight: 700;
+}
+.table-horarios tbody tr:nth-child(even) {
+  background: #fff5f5;
+}
+.fila-destacada {
+  background: var(--amarillo) !important;
+  color: var(--rojo-oscuro);
+}
+.nota-horario { color: #666; font-style: italic; }
+
+/* FORMULARIO */
+.formulario-section { background: white; }
+.card-contacto {
+  border: 3px solid #eee;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+.form-label { font-weight: 700; color: #444; }
+.form-control, .form-select {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 12px;
+  transition: 0.3s;
+}
+.form-control:focus, .form-select:focus {
+  border-color: var(--rojo);
+  box-shadow: 0 0 0 0.2rem rgba(214, 40, 40, 0.15);
+}
+.btn-enviar {
+  background: var(--rojo);
+  color: white;
+  font-weight: 900;
+  font-size: 1.1rem;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  transition: 0.3s;
+}
+.btn-enviar:hover {
+  background: var(--amarillo);
+  color: var(--rojo-oscuro);
+  transform: translateY(-3px);
+}
+
+/* FOOTER */
+.footer-bs {
+  background: var(--rojo-oscuro);
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+/* =========================================
+   LIBRO DE RECLAMACIONES - BROASTER Y SAZÓN
+========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+:root {
+  --rojo: #D62828;
+  --rojo-oscuro: #B71C1C;
+  --crema: #FFF8F0;
+  --naranja: #F77F00;
+  --amarillo: #FCBF49;
+}
+
+body {
+  background: var(--crema);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER ROJO */
+.header-bs {
+  background: var(--rojo);
+  box-shadow: 0 4px 10px rgba(214, 40, 40, 0.3);
+}
+.header-bs .navbar-brand {
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--amarillo) !important;
+}
+.header-bs .nav-link {
+  color: white !important;
+  font-weight: 700;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+.header-bs .nav-link:hover, .header-bs .nav-link.active {
+  color: var(--amarillo) !important;
+  border-bottom: 2px solid var(--amarillo);
+}
+.navbar-toggler { border: 2px solid white; }
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* BANNER TÍTULO */
+.banner-pagina {
+  background: var(--crema);
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+.banner-pagina h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--rojo);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.banner-pagina .linea {
+  width: 80%;
+  max-width: 700px;
+  height: 3px;
+  background: var(--naranja);
+  margin: 15px auto;
+  border-radius: 10px;
+}
+.banner-pagina p { font-size: 1.2rem; color: #666; }
+
+/* AVISO INDECOPI */
+.alerta-indecopi {
+  border-left: 6px solid var(--amarillo);
+  background: #fff9e6;
+  border-radius: 12px;
+  border: 1px solid #ffe082;
+}
+.alerta-indecopi h5 { color: var(--rojo-oscuro); }
+
+/* FORMULARIO */
+.reclamos-section { background: white; }
+.card-reclamos {
+  border: 3px solid var(--rojo);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(214, 40, 40, 0.15);
+}
+.subtitulo-form {
+  color: var(--rojo);
+  font-weight: 900;
+  font-size: 1.3rem;
+  border-bottom: 3px solid var(--amarillo);
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+.form-label { 
+  font-weight: 700; 
+  color: #444; 
+}
+.form-control, .form-select {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 12px;
+  transition: 0.3s;
+}
+.form-control:focus, .form-select:focus {
+  border-color: var(--rojo);
+  box-shadow: 0 0 0 0.2rem rgba(214, 40, 40, 0.15);
+}
+.form-check-label { font-size: 0.95rem; color: #555; }
+.form-check-input:checked { 
+  background-color: var(--rojo); 
+  border-color: var(--rojo); 
+}
+
+/* BOTÓN */
+.btn-enviar-reclamo {
+  background: var(--rojo);
+  color: white;
+  font-weight: 900;
+  font-size: 1.2rem;
+  padding: 16px;
+  border-radius: 12px;
+  border: none;
+  transition: 0.3s;
+  letter-spacing: 1px;
+}
+.btn-enviar-reclamo:hover {
+  background: var(--amarillo);
+  color: var(--rojo-oscuro);
+  transform: translateY(-3px);
+}
+.nota-legal { font-size: 0.9rem; color: #666; }
+
+/* FOOTER */
+.footer-bs {
+  background: var(--rojo-oscuro);
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 60px;
+}
+/* BOTÓN VOLVER */
+.volver-inicio { background: var(--crema); }
+.btn-volver {
+  background: var(--rojo);
+  color: white;
+  font-weight: 900;
+  padding: 14px 35px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s;
+  display: inline-block;
+}
+.btn-volver:hover {
+  background: var(--amarillo);
+  color: var(--rojo-oscuro);
+  transform: translateY(-3px);
+}
+
+
+/* =========================================
+   6. FOOTER
+========================================= */
+.footer-simple {
+  background: var(--negro);
+  color: rgb(240, 147, 9);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.logo-footer {
+  width: 80px;
+  border-radius: 50%;
+  border: 3px solid var(--amarillo);
+  margin-bottom: 10px;
+}
+
+.footer-simple h3 {
+  color: var(--amarillo);
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+/* Redes circulos */
+.redes-circulo {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+.redes-circulo a {
+  width: 45px;
+  height: 45px;
+  background: #333;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.redes-circulo a:hover {
+  background: var(--rojo);
+}
+.redes-circulo img {
+  width: 22px;
+  height: 22px;
+  filter: invert(1);
+}
+
+.footer-simple hr {
+  border-color: #444;
+  margin: 20px 0;
+}
+
+.footer-simple .text-center {
+  color: #ccc;
+  font-size: 15px;
+}
+/*================ FOOTER ================*/
+
+.footer{
+    background:#212529;
+    color:#fff;
+}
+
+.footer-logo{
+    width: 180px;
+}
+
+.footer-title{
+    color:#ffc107;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.footer p{
+    font-size:17px;
+    line-height:1.8;
+    color:#e9ecef;
+}
+
+.footer-links li{
+    margin-bottom:12px;
+}
+
+.footer-links a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#ffc107;
+    padding-left:8px;
+}
+
+.footer i{
+    color:#ffc107;
+    margin-right:8px;
+}
+
+.social-icons a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+
+    width:45px;
+    height:45px;
+
+    margin-right:12px;
+
+    border-radius:50%;
+
+    background:#343a40;
+
+    color:#ffc107;
+
+    font-size:22px;
+
+    transition:.3s;
+    text-decoration:none;
+}
+
+.social-icons a:hover{
+    background:#dc3545;
+    color:#fff;
+    transform:translateY(-5px);
+}
+
+.footer hr{
+    border-color:#6c757d;
+}
+
+.footer .text-center{
+    color:#dee2e6;
+    font-size:15px;
+}
+
+
