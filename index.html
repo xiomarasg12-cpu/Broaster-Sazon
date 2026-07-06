@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broaster y Sazón</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagenes/logo2.jpg">
+    <link rel="stylesheet" href="style.css">
+    <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== HEADER ROJO IGUAL A LA FOTO ===== -->
+<nav class="navbar navbar-expand-lg navbar-Broaster">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="imagenes/logo2.jpg" alt="Logo Broaster" class="logo-Broaster me-3">
+      <span class="titulo-marca">Broaster y Sazón</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="carta.html">Carta</a></li>
+        <li class="nav-item"><a class="nav-link" href="promociones.html">Promociones</a></li>
+        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="testimonios.html">Testimonios</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="linea-amarilla"></div>
+</nav>
+
+<!-- BANNER -->
+  <section class="rr-banner">
+    <div class="container">
+      <h1 class="rr-titulo">BROASTER Y SAZÓN</h1>
+      <div class="rr-linea"></div>
+      <p>El mejor sabor crujiente de la ciudad</p>
+      <a href="carta.html" class="btn rr-btn mt-3">Ver Carta</a>
+    </div>
+  </section>
+
+<!-- ===== CARRUSEL CON FONDO NEGRO ===== -->
+<div id="carouselProductos" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagenes/pollo.BBQ.jpg" class="d-block w-100" alt="Pollo BBQ">
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/polloalabrasa.papas}.png" class="d-block w-100" alt="Pollo a la brasa">
+    </div>
+     <div class="carousel-item">
+      <img src="imagenes/pollo.maracuya.png" class="d-block w-100" alt="Pollo Maracuya">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- ===== 4 BOTONES DE CATEGORÍAS ===== -->
+<section class="categorias">
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+      <div class="col-6 col-md-3">
+        <a href="carta.html#pollobroaster" class="btn-categoria active">
+          🍗<br>Pollo Broaster
+        </a>
+      </div>
+      <div class="col-6 col-md-3">
+        <a href="carta.html#hamburguesas" class="btn-categoria">
+          🍔<br>Hamburguesas
+        </a>
+      </div>
+      <div class="col-6 col-md-3">
+        <a href="carta.html#postres" class="btn-categoria">
+          🍨<br>Postres
+        </a>
+      </div>
+      <div class="col-6 col-md-3">
+        <a href="#bebidas" class="btn-categoria">
+          🥤<br>Bebidas
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SECCIÓN PRODUCTOS SIMPLE ===== -->
+<section class="container section-productos" id="pollo">
+  
+  <h2 class="titulo-categoria">🍗 Pollo Broaster</h2>
+
+  <div class="row g-3">
+    
+    <!-- PRODUCTO 1 -->
+    <div class="col-6 col-md-4">
+      <div class="card-simple">
+        <img src="imagenes/broester.clasico.jpg" alt="Broaster Clásico">
+        <h4>Broaster Clásico</h4>
+        <h6>Pollo Broaster + Papas + Ensalada</h6>
+        <p>S/ 13.90</p>
+        <a href="https://wa.me/51999999" class="btn-pedir">Pedir</a>
+      </div>
+    </div>
+
+    <!-- PRODUCTO 2 -->
+    <div class="col-6 col-md-4">
+      <div class="card-simple">
+        <img src="imagenes/hamburguesa.deluxe.jpg" alt="hamburguesa Deluxe">
+        <h4>Combo Personal</h4>
+        <h6>Hamburguesa Deluxe + Papas + Cebolla + Queso + Tocino + Carne</h6>
+        <p>S/ 17.90</p>
+        <a href="https://wa.me/51999999" class="btn-pedir">Pedir</a>
+      </div>
+    </div>
+
+    <!-- PRODUCTO 3 -->
+    <div class="col-6 col-md-4">
+      <div class="card-simple">
+        <img src="imagenes/pollo.teriyaki.jpeg" alt="pollo Teriyaki">
+        <h4>Pollo Teriyaki</h4>
+        <h6>Pollo Teriyaki + Papas + Ensalada </h6>
+        <p>S/ 12.90</p>
+        <a href="https://wa.me/51999999" class="btn-pedir">Pedir</a>
+      </div>
+    </div>
+
+    <!-- PRODUCTO 4-->
+    <div class="col-6 col-md-4">
+      <div class="card-simple">
+        <img src="imagenes/hamburguesa.royal.jpg" alt="Hamburguesa Royal">
+        <h4>Hamburguesa Royal</h4>
+        <h6>Hamburguesa Royal + Papas + Huevo + Queso + Tocino + Carne </h6>
+        <p>S/ 19.90</p>
+        <a href="https://wa.me/51999999" class="btn-pedir">Pedir</a>
+      </div>
+    </div>
+
+    <!-- PRODUCTO 5 -->
+    <div class="col-6 col-md-4">
+      <div class="card-simple">
+        <img src="imagenes/shake.fresa.jpeg" alt="Shake de Fresa">
+        <h4>Shake de Fresa</h4>
+        <h6>Shake de Fresa + Crema Batida + Topping de Fresa</h6>
+        <p>S/ 9.90</p>
+        <a href="https://wa.me/51999999" class="btn-pedir">Pedir</a>
+      </div>
+    </div>
+
+    <!-- PRODUCTO 6 -->
+    <div class="col-6 col-md-4">
+      <div class="card-simple">
+        <img src="imagenes/shake.oreo.jpeg" alt="Shake de Oreo">
+        <h4>Shake de Oreo</h4>
+        <h6>Shake de Oreo + Crema Batida + Topping de Oreo</h6>
+        <p>S/ 9.90</p>
+        <a href="https://wa.me/51999999" class="btn-pedir">Pedir</a>
+      </div>
+    </div>
+
+    <!-- PRODUCTO 8 -->
+    <div class="col-6 col-md-4">
+      <div class="card-simple">
+        <img src="imagenes/helado.keke.chocolste.jpg" alt="Helado Keke Chocolste">
+        <h4>Helado Keke Chocolste</h4>
+        <h6>Helado Keke Chocolate + Crema Batida + Topping de Chocolate</h6>
+        <p>S/ 8.90</p>
+        <a href="https://wa.me/51999999" class="btn-pedir">Pedir</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== SECCIÓN SERVICIOS CON COLOR ===== -->
+<section class="servicios-index">
+  <div class="container">
+    <h2>NUESTROS SERVICIOS</h2>
+    <p class="subtitulo">Llevamos el mejor sabor hasta ti</p>
+    
+    <div class="row g-4 justify-content-center">
+      
+      <div class="col-12 col-md-10 col-lg-8">
+        <div class="item-servicio">
+          <div class="icono">🚚</div>
+          <div>
+            <h4>Delivery Rápido</h4>
+            <p>Te llevamos tu pedido calientito hasta la puerta de tu casa en menos de 30 min</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-10 col-lg-8">
+        <div class="item-servicio">
+          <div class="icono">🎉</div>
+          <div>
+            <h4>Eventos y Catering</h4>
+            <p>Combos especiales para fiestas, cumpleaños y reuniones familiares</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-10 col-lg-8">
+        <div class="item-servicio">
+          <div class="icono">🏠</div>
+          <div>
+            <h4>Atención en Local</h4>
+            <p>Visítanos y disfruta de un ambiente familiar con el mejor pollo broaster</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- 3. ACCORDION - NUEVO -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center rr-titulo">Preguntas Frecuentes</h2>
+      <div class="rr-linea"></div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion rr-accordion" id="faqRR">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  ¿Hacen delivery a todo Lima?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqRR">
+                <div class="accordion-body">Sí, atendemos de 11am a 10:30pm. El costo varía según zona.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  ¿Aceptan reservas para eventos?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqRR">
+                <div class="accordion-body">Claro que sí. Tenemos servicio de catering.
+                  <button class="btn rr-btn btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalRR">Solicitar Cotización</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <div class="ratio ratio-16x9 rr-video">
+  <iframe src="https://www.youtube.com/embed/PNzf2_tiuk0" title="YouTube video" allowfullscreen></iframe>
+</div>
+
+<!-- 4. MODAL - NUEVO -->
+  <div class="modal fade" id="modalRR" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title rr-titulo">Solicitar Cotización</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Escríbenos por WhatsApp al 999 888 777 para eventos, cumpleaños y catering corporativo.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container py-5">
+
+        <div class="row gy-4">
+
+            <!-- Logo --><!--xiomara aca va el logo dsp borras los comentarios-->
+            <div class="col-lg-4">
+
+                <img src="imagenes/logo2.jpg" alt="Broaster y Sazón" class="fs-footer-logo mb-3" width="90">
+
+                <p>
+                    Broaster y Sazón ofrece el auténtico sabor del pollo broaster,
+                    preparado con ingredientes de calidad y la mejor atención para
+                    compartir momentos inolvidables en familia.
+                </p>
+
+            </div>
+
+            <!-- Enlaces -->
+            <div class="col-lg-4">
+
+                <h3 class="footer-title">Enlaces</h3>
+
+                <ul class="list-unstyled footer-links">
+
+                    <li><a href="index.html">Inicio</a></li>
+
+                    <li><a href="carta.html">Carta</a></li>
+
+                    <li><a href="promociones.html">Promociones</a></li>
+
+                    <li><a href="servicios.html">Servicios</a></li>
+
+                    <li><a href="testimonio.html">Testimonios</a></li>
+
+                    <li><a href="contactanos.html">Contáctanos</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contacto -->
+            <div class="col-lg-4">
+
+                <h3 class="footer-title">Contáctanos</h3>
+
+                <p>
+                    <i class="bi bi-geo-alt-fill"></i>
+                    Lima, Perú
+                </p>
+
+                <p>
+                    <i class="bi bi-telephone-fill"></i>
+                    +51 999 999 999
+                </p>
+
+                <p>
+                    <i class="bi bi-envelope-fill"></i>
+                    contacto@broasterysazon.com
+                </p>
+
+                  <!-- REDES EN CIRCULO -->
+                <div class="redes-circulo">
+                      <a href="https://tiktok.com/" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tiktok.svg">
+                      </a>
+                      <a href="https://instagram.com/" target="_blank">
+                         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg">
+                      </a>
+                    <a href="https://facebook.com/" target="_blank">
+                         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg">
+                    </a>
+                    <a href="https://wa.me/51999999" target="_blank">
+                         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg">
+                    </a>
+                </div>
+
+            </div>
+
+            </div>
+            <a href="librodereclamo.html">
+              <img src="imagenes/libro-de-reclamaciones-mibanco_480x480.jpg" alt="libro de reclamaciones" width="90"">
+            </a>
+
+            <div class="text-center pt-3">
+
+              © 2026 Broaster y Sazón | Todos los derechos reservados.
+
+            </div>
+
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
