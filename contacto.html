@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Broaster y Sazón</title>
+  <link rel="icon" type="image/png" href="imagenes/logo2.jpg">
+  <!-- BOOTSTRAP 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- TU CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<body>
+
+  <!-- HEADER -->
+  <nav class="navbar navbar-expand-lg header-bs sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="imagenes/logo2.jpg" alt="Logo" width="45" height="45" class="rounded-circle bg-white p-1">
+        Broaster y Sazón
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="carta.html">Carta</a></li>
+          <li class="nav-item"><a class="nav-link" href="promociones.html">Promociones</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonios.html">Testimonios</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BANNER TÍTULO -->
+  <section class="banner-pagina">
+    <div class="container">
+      <h1>CONTÁCTANOS</h1>
+      <div class="linea"></div>
+      <p>Estamos aquí para ti. Visítanos o escríbenos</p>
+    </div>
+  </section>
+
+  <!-- 1. UBICACIÓN + MAPA -->
+  <section class="ubicacion-section py-5">
+    <div class="container">
+      <h2 class="titulo-seccion text-center">Visítanos</h2>
+      <div class="linea-corta mx-auto mb-4"></div>
+      
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <div class="info-ubicacion">
+            <div class="item-info">
+              <div class="icono">📍</div>
+              <div>
+                <h5>Dirección Principal</h5>
+                <p>Av. Los Pollos 123 - Distrito de Miraflores, Lima, Perú</p>
+              </div>
+            </div>
+            <div class="item-info">
+              <div class="icono">📞</div>
+              <div>
+                <h5>Teléfonos</h5>
+                <p>Local: (01) 123-4567<br>WhatsApp Delivery: 999 888 777</p>
+              </div>
+            </div>
+            <div class="item-info">
+              <div class="icono">📧</div>
+              <div>
+                <h5>Correo</h5>
+                <p>contacto@broasterysazon.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card card-mapa">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.646!2d-77.028!3d-12.046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDAyJzQ1LjYiUyA3N8KwMDEnNDEuMyJX!5e0!3m2!1ses!2spe!4v1234567890"
+              width="100%" 
+              height="350" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. TABLA DE HORARIOS -->
+  <section class="horarios-section py-5">
+    <div class="container">
+      <h2 class="titulo-seccion text-center">Nuestros Horarios</h2>
+      <div class="linea-corta mx-auto mb-4"></div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card card-horarios">
+            <div class="card-body p-0">
+              <table class="table table-horarios mb-0">
+                <thead>
+                  <tr>
+                    <th>Día</th>
+                    <th>Horario de Atención</th>
+                    <th>Delivery</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Lunes a Viernes</strong></td>
+                    <td>11:00 am - 11:00 pm</td>
+                    <td>11:00 am - 10:30 pm</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Sábados</strong></td>
+                    <td>11:00 am - 12:00 am</td>
+                    <td>11:00 am - 11:30 pm</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Domingos</strong></td>
+                    <td>11:00 am - 11:00 pm</td>
+                    <td>11:00 am - 10:30 pm</td>
+                  </tr>
+                  <tr class="fila-destacada">
+                    <td><strong>Feriados</strong></td>
+                    <td>12:00 pm - 10:00 pm</td>
+                    <td>12:00 pm - 9:30 pm</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p class="nota-horario text-center mt-3">* El delivery tiene un costo adicional según zona</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. CUESTIONARIO / FORMULARIO -->
+  <section class="formulario-section py-5">
+    <div class="container">
+      <h2 class="titulo-seccion text-center">Escríbenos</h2>
+      <div class="linea-corta mx-auto mb-4"></div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card card-contacto">
+            <div class="card-body p-4">
+              <form>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label">Nombre Completo *</label>
+                    <input type="text" class="form-control" placeholder="Juan Pérez" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label">Teléfono *</label>
+                    <input type="tel" class="form-control" placeholder="999 999 999" required>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Correo Electrónico *</label>
+                  <input type="email" class="form-control" placeholder="tu@email.com" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Motivo de Contacto *</label>
+                  <select class="form-select" required>
+                    <option value="">Selecciona una opción</option>
+                    <option>Realizar un Pedido</option>
+                    <option>Consulta sobre Promociones</option>
+                    <option>Reclamo o Sugerencia</option>
+                    <option>Trabaja con Nosotros</option>
+                    <option>Eventos y Catering</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Mensaje *</label>
+                  <textarea class="form-control" rows="5" placeholder="Cuéntanos en qué podemos ayudarte..." required></textarea>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" required>
+                  <label class="form-check-label">
+                    Acepto las políticas de privacidad
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-enviar w-100">Enviar Mensaje</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+   <footer class="footer-simple">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <div class="col-md-4 mb-4">
+            <img src="imagenes/logo2.jpg" alt="Logo" class="logo-footer">
+            <h3>Broaster y Sazón</h3>
+            <p>El mejor sabor crujiente de la ciudad</p>
+          </div>
+            <h3>Síguenos</h3>
+            <div class="redes-circulo">
+                <a href="https://tiktok.com/" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tiktok.svg">
+                </a>
+                <a href="https://instagram.com/" target="_blank">
+                         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg">
+                </a>
+                <a href="https://wa.me/51999999" target="_blank">
+                         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg">
+                </a>
+                
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p class="text-center">© 2025 Broaster y Sazón. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+  <!-- JS BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
